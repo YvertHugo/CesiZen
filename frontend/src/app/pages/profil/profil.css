@@ -1,0 +1,16 @@
+.profil-container { max-width: 500px; margin: 40px auto; font-family: 'Inter', sans-serif; }
+.card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.05); margin-bottom: 25px; }
+.danger-zone { border: 1px solid #EB5757; background: #FFF5F5; }
+h2, h3 { color: #111827; }
+p { color: #6B7280; font-size: 14px; line-height: 1.5; }
+.form-group { margin-bottom: 15px; }
+label { display: block; margin-bottom: 5px; font-size: 14px; font-weight: 500; }
+input { width: 100%; padding: 10px; border: 1px solid #E5E7EB; border-radius: 8px; box-sizing: border-box; }
+button { width: 100%; padding: 12px; background: #2F80ED; color: white; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; margin-top: 10px; }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn-danger { background: #EB5757; }
+.btn-danger:hover { background: #C14242; }
+.error-text { color: #EB5757; font-size: 13px; font-weight: 600; }
+.message { margin-top: 15px; font-weight: 600; text-align: center; }
+.message.success { color: #27AE60; }
+.message.error { color: #EB5757; }
