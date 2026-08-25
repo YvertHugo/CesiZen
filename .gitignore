@@ -1,6 +1,8 @@
-**/node_modules/
-**/dist/
-**/.angular/
+node_modules/
+backend/node_modules/
+frontend/node_modules/
+frontend/.angular/
+frontend/dist/
 *.db
 .env
 .DS_Store

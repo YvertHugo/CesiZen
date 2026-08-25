@@ -1,0 +1,20 @@
+<div class="info-container">
+  <h2>Santé Mentale & Prévention</h2>
+  <p class="subtitle">Comprendre le stress pour mieux le gérer au quotidien.</p>
+
+  <p *ngIf="chargement" class="loading">Chargement des articles...</p>
+
+  <div class="articles-grid" *ngIf="!chargement">
+    <div class="article-card" *ngFor="let article of articles">
+      <h3>{{ article.titre }}</h3>
+      
+      <span class="date">Publié le {{ article.date_publication | date:'dd/MM/yyyy' }}</span>
+      
+      <p class="description">{{ article.description }}</p>
+      
+      <div class="content">
+        <p>{{ article.contenu }}</p>
+      </div>
+    </div>
+  </div>
+</div>

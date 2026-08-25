@@ -1,0 +1,86 @@
+.register-container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 40px 30px;
+  background-color: #F9FAFB; /* Fond principal de la charte */
+  border-radius: 12px;       /* Coins du conteneur adoucis */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  font-family: 'Inter', -apple-system, sans-serif; /* Typographie demandée */
+  text-align: center;
+}
+
+h2 {
+  color: #111827; /* Texte principal */
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #6B7280; /* Texte secondaire */
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  color: #111827;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px; /* Composant d'interface arrondi */
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #2F80ED; /* Focus sur la couleur principale */
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background-color: #2F80ED; /* Bleu apaisant de la charte */
+  color: white;
+  border: none;
+  border-radius: 50px;      /* Bouton complètement arrondi selon la charte */
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, opacity 0.2s;
+  margin-top: 10px;
+}
+
+button:hover:not(:disabled) {
+  background-color: #1b6fd1; /* Version légèrement plus sombre pour l'effet de survol */
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.message {
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.message.success {
+  color: #27AE60; /* Vert calme pour le succès */
+}
+
+.message.error {
+  color: #EB5757; /* Rouge d'erreur explicite */
+}
