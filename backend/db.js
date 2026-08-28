@@ -1,16 +1,11 @@
-const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
+const sqlite3 = require('sqlite3').verbose();
 
-// Chemin vers la base de données (située à la racine du monorepo)
-const dbPath = path.resolve(__dirname, '../cesizen.db');
-
-// Initialisation de la connexion
+// Utiliser un chemin absolu vers le dossier de travail
+const dbPath = path.resolve(__dirname, 'cesizen.db');
 const db = new sqlite3.Database(dbPath, (err) => {
-    if (err) {
-        console.error('Erreur lors de la connexion à SQLite :', err.message);
-    } else {
-        console.log('Connexion réussie à la base de données CESIZen.');
-    }
+  if (err) console.error("Erreur de connexion SQLite :", err.message);
+  else console.log("Connecté à la base SQLite :", dbPath);
 });
 
 module.exports = db;
