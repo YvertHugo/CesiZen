@@ -50,3 +50,16 @@ jobs:
       - name: Build Angular
         run: npm run build --if-present
         working-directory: ./frontend
+
+  deploy-job:
+    name: Déploiement
+    runs-on: self-hosted
+    needs: [backend-job, frontend-job]
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    steps:
+      - name: Déployer en local
+        run: |
+          cd ~/Documents/Projet_CESI/Partie-3-Cesizen/CesiZen
+          git pull origin main
+          docker compose build
+          docker compose up -d
