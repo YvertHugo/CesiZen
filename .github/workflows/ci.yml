@@ -59,7 +59,7 @@ jobs:
     steps:
       - name: Déployer en local
         run: |
-          cd ~/Documents/Projet_CESI/Partie-3-Cesizen/CesiZen
+          cd ~/Documents/Projet_CESI/CesiZen
           git pull origin main
           docker compose build
           docker compose up -d
