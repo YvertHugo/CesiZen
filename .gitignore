@@ -6,3 +6,4 @@ frontend/dist/
 *.db
 .env
 .DS_Store
+cesizen.db
